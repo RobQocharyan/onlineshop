@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/onlineshop/static/css/main.03d238ac.css",
+    "main.js": "/onlineshop/static/js/main.1df47758.js",
+    "static/media/bannana.png": "/onlineshop/static/media/bannana.9e18bdb4204a027f4207.png",
+    "static/media/bike.png": "/onlineshop/static/media/bike.1f384c0287729d1bf947.png",
+    "static/media/book.jpeg": "/onlineshop/static/media/book.df429926e566b637c28e.jpeg",
+    "static/media/computer.png": "/onlineshop/static/media/computer.001419709b05bb757be4.png",
+    "static/media/shopping-cart.png": "/onlineshop/static/media/shopping-cart.78215909b21f0b186a7f.png",
+    "index.html": "/onlineshop/index.html",
+    "main.03d238ac.css.map": "/onlineshop/static/css/main.03d238ac.css.map",
+    "main.1df47758.js.map": "/onlineshop/static/js/main.1df47758.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03d238ac.css",
+    "static/js/main.1df47758.js"
+  ]
+}
