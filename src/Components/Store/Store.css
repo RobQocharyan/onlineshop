@@ -1,0 +1,175 @@
+.store{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+
+.itemDiv{
+    margin-left: 20px;
+    width: 400px;
+    height: 300px;
+}
+
+
+
+.imgDiv img{
+    width: 350px;
+    height: 200px;
+}
+
+.itemSpans{
+    width: 400px;
+    text-align: end;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    .itemSpans{
+        width: 369px;
+        text-align: end;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+  }
+
+
+
+
+ 
+
+
+.itemName{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 5px;
+    color: rgb(39, 35, 35);
+
+
+}
+
+.itemPrice{
+    color: gray;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    }
+
+    @media only screen and (max-width: 820px) {
+        .itemPrice{
+            margin-right: 50px;
+            }
+      }
+
+      @media only screen and (max-width: 320px) {
+        .itemPrice{
+            margin-right: 80px;
+            }
+      }
+
+.itemButton{
+        display: grid;  
+        height: 40px;
+        margin-top: 10px;
+
+}
+
+.itemButton button{
+    justify-content: space-evenly;
+    align-content: space-around;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #888;
+}
+
+    @media only screen and (max-width: 820px) {
+        .itemButton button{
+            width: 348px;
+        }
+      }
+
+
+      @media only screen and (max-width: 320px) {
+        .itemButton button{
+            width: 292px;
+        }
+      }
+
+.itemButton button:hover{
+    background-color: cyan;
+
+}
+
+
+
+.itembuyButton{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+
+}
+
+
+@media only screen and (max-width: 320px) {
+    .itembuyButton{
+        width: 325px;
+
+    }
+  }
+
+.itembuyButton button{
+    width: 30px;
+    height: 40px;
+    background-color: rgb(58, 122, 182);
+    border: none;
+
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+
+}
+
+.incart{
+    width: 70px;
+    padding-left: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.incart span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #888;
+    margin-bottom: 5px;
+
+}
+
+.remove{
+  display: flex;
+  justify-content: center;
+}
+
+.remove button{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    color: white
+
+}
+
+@media only screen and (max-width: 320px) {
+    .remove button{
+        margin-right: 36px;
+    }
+  }
