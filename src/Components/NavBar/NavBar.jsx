@@ -11,7 +11,7 @@ const NavBar = ()=>{
 
 
     return (
-        <div className="navbar">
+        <div className="nav navbar">
             <ul>
                 <li><Link to={"/home"}>Home</Link></li>
            
@@ -33,6 +33,7 @@ const NavBar = ()=>{
                 </div>
             </div>
         )}
+        <Link to='/registration' className="registartion">Գրանցում</Link>
 
         </div>
     )

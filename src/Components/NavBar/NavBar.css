@@ -8,6 +8,20 @@
 
 }
 
+.navbar a.registartion {
+    width: 140px;
+    height: 48px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #058187;
+    border: 1px solid #A2A2A2;
+    margin-right: 50px;
+}
+
 .navbar ul{
     display: flex;
     flex-direction: row;
@@ -15,7 +29,7 @@
     /* margin:10px 0 10px 10px; */
     cursor: pointer;
 
-}   
+}
 
 .navbar ul li {
     padding: 18px;
@@ -26,7 +40,7 @@
     .navbar ul li {
         padding: 8px 0 0 8px;
     }
-    }
+}
 
 
 .navbar ul li a{
