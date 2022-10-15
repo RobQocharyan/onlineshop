@@ -1,18 +1,17 @@
-@mixin btns {
-    max-width: 290px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    font-family: 'Montserrat arm';
+$fontfamily: 'Montserrat', sans-serif;
+
+@mixin textstyle {
+    font-family: $fontfamily;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 129%;
-    color: #E84545;
-    border: 2px solid #E84545;
+    letter-spacing: 0.02em;
+    color: #4D4D4D;
+    margin: 10px 0 10px 8px;
+
 }
+
 
 .registration-page {
     form {
@@ -48,12 +47,7 @@
         }
 
         .sub-title {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            font-style: normal;
-            line-height: 22px;
-            color: #4D4D4D;
+            @include textstyle;
             margin: 15px 0 ;
 
             @media screen and (max-width: 590px) {
@@ -71,7 +65,20 @@
 
         .btns {
             .type-btn {
-                @include btns;
+                max-width: 290px;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 7px;
+                font-family: $fontfamily;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 129%;
+                color: #E84545;
+                border: 2px solid #E84545;
+                cursor:pointer;
 
                 @media screen and (max-width: 590px) {
                     font-size: 18px;                
@@ -96,15 +103,69 @@
         .inputs {
             margin-top: 10px;
             
-            input {
+            .input {
                 margin: 10px 0;
                 width: 100%;
                 height: 48px;
-                border-radius: 3px;
+                border-radius: 7px;
                 background-color: #FFFFFF;
                 border: 1px solid rgba(0, 0, 0, 0.3);
                 outline: none;
                 padding: 0 20px;
+            }
+            input[type=tel] {
+                width: 49%;
+            }
+
+            .radios {
+                p {
+                    @include textstyle;
+                    margin: 10px 0 10px 8px;
+                }
+                input[type=radio] {
+                    margin: 0 7px;
+                    accent-color: red;
+                    width: 15px;
+                    height: 15px;
+                }
+                label {
+                    font-family: $fontfamily;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #000000;
+                    margin: 0;
+                    margin-right: 8px;
+                    display: inline-flex;
+                    align-items: center;
+                }
+            }
+            .select {
+                select {
+                    box-shadow: none;
+                    @include textstyle;
+                    option {
+                        border-radius: 8px;
+                        margin: 5px;
+                        border: 1px solid red;
+                    }
+                }
+            }
+
+            input[type=checkbox] {
+                width: 13px;
+                height: 13px;
+                border: 1px solid red;
+                margin-top: 15px;
+
+                //#4D4D4D
+            }
+
+            label.agree {
+                @include textstyle;
+                margin-left: 10px;
+                max-width: 493px;
             }
         }
 
@@ -114,6 +175,37 @@
 
         @media screen and (max-width: 395px) {
             padding: 30px 20px;       
+        }
+
+
+        .submit-btn {
+            width: 100%;
+            height: 56px;
+            background: #058187;
+            border-radius: 7px;
+            color: white;
+            border: none;
+            margin-bottom: 15px;
+        }
+
+        .social-media {
+            p {
+                @include textstyle;
+            }
+            &-icons {
+                svg {
+                    margin: 8px;
+                }
+            }
+        }
+        p.have-profile {
+            @include textstyle;
+            font-size: 15px;
+
+            a {
+                margin-left: 5px;
+                text-decoration: none;
+            }
         }
     }
 }
